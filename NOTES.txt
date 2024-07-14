@@ -1,0 +1,28 @@
+EP2
+
+two type of dependency 
+`1 dev => required for development phase
+`2 normal dependency => used in production also
+
+
+// these are added to package.jason so no need for npx parcel index.html
+// for running the project in dev mode
+npm run start or npm start
+
+
+// these are added to package.jason so no need for npx parcel build index.html
+// for running the project in dev mode
+
+// for running in build mode
+npm run build
+
+EP3
+
+// JSX is not HTML inside JS
+// JSX is diffrent from JS
+
+// JSX is HTML-like syntax or XML-like
+
+
+
+// Two ways of creating React Component => Class Based Component (Old, not in Practice)  &  Functional Component (Currently Used practice)
