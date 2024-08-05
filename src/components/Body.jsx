@@ -134,10 +134,10 @@ to show the LOading... until API gets the data
                                         Top Rated Restaurant
                             </button>   
                         </div>
-                        <div >
+                        {/* <div >
                             <label>UseName: </label>
                             <input type="text" className="border border-solid border-black rounded-lg" value={loggedInUser}/>
-                        </div>
+                        </div> */}
                         
                     </div>
                     <div className="flex flex-wrap">
