@@ -7,10 +7,7 @@
     "build": "parcel build Index.html",
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "(https://github.com/ABDUL897930/ReactJS.git)"
-  },
+
   "keywords": [
     "React",
     "ReactJS"
