@@ -23,6 +23,128 @@ EP3
 
 // JSX is HTML-like syntax or XML-like
 
-
+// optional chaining
 
 // Two ways of creating React Component => Class Based Component (Old, not in Practice)  &  Functional Component (Currently Used practice)
+
+// Props are just arguments to the function
+// passing props to a function same as passing arguments to the function
+
+//configDrivenUI => is like UI is driven by the config which is sent by Backend
+
+//ReactHooks = >
+
+// Two way to use export
+
+// 1) using export default =>only one file is exported not o=more than one otherwise give error
+    export default name_of_variable
+    import name_of_variable from "path"
+
+// 2) using named export i.e and using import in curly brackets import {name of export from }
+    export const name_of_variable =
+    import {name_of_variable} from "path"
+
+#ReactHooks
+// these are normal JS function
+//these are utility function
+
+// Why React is fast?
+it has virtualDomm, it has diss Algorithm, it has A high-level description of React's reconciliation algorithm. 
+
+// Microservices and monolith
+
+// EP6 //////////////////////////////////////////////////////////////////////////////////////
+
+// How to fetch the data.
+
+// How to call data flying OR how to fetch the database
+
+//EP7/////////////////////////////////////////////////////////////////////////////////////////
+
+// whenever my Component is rendered useEffect is called
+
+// createBrowserRouter, RouterProvider
+
+// childernRoutes = >
+// Outlet is from router-dom => help in replace 
+
+// when use react and want to go to other page do not use "anchor tag" bcoz whole page will get replaced insted of only modified component
+
+//Q react is single page app bcoz it simply interchanges the components insted to going to diff diff pages
+
+//EP7 40 min(how to design pages for restaurant bcoz of data is not available)
+
+//EP8
+CLASS BASED COMPONENTS=> OLDER WAY OF CREATING THE COMPONENT
+
+
+// LIFE CYCLE OF CLASS BASED COMPONENT
+HOW IT IS MOUNTED IN THE WEBPAGE
+    PARENT IS called
+    CONST IS CALLED THEN RENDER IS CALLED THEN IF ANY COMPONENT IS THERE IT IS CALLED THEN IN THAT COMPONENT CONST CALLED AND THEN RENDER IS CALLED
+
+    IF componentDidMount() is present is the component than first const is called than render() is called and after that componentDidMount is called
+    componentDidUpdate()
+
+# EP8 Optimization
+    1 single responsibility principle => single identity shoukd have single responsibility
+            each component should have single responsibility
+
+    2 create your own Custom Hooks it means
+
+    3 Breakdown code into smalled chuck
+        Breaking down the code into smaller chunk
+        chunking
+        code splitting
+        lazy loading
+        dynamic bundling
+        creating seperate bundle for grocery
+        import grocery using lazy loading or On demand loading
+#EP9
+    Ways to customize the CSS using onyone of these tools, libraby or framework 
+    (styled-components, material UI, Bootstarap, chakra ui, ant design, tailwind CSS)
+
+    #Tailwind CSS
+    configure tailwind css
+    go official site 
+    go Get Started
+    go framework guide (choose the framework u r using i.e parcel )
+    copy paste command in terminal and install
+
+    #PostCSS = tool to transform the CSS along with JS
+    tailwind in background uses PostCSS 
+
+    > create file name (.postcssrc) copy {
+    "plugins": {
+        "tailwindcss": {}
+    }
+    } inside .postcssrc file.
+
+    #Tailwind vs code extension
+
+    #Pros of Tailwind
+        i dont have to mode bw html js css file.
+        very light-weight(when parcel is making bundle of the code it will only import css which is required in app)
+    #cons of Tailwind
+        it comes with initial learning curve
+        it makes code little complex
+//EP11(20)
+
+#Higher Order Component => Is a JS function it takes component as input enhances it and return the enhanced component
+UI Layer (changes according to the data layer if none it will remain static)
+Data Layer
+
+// EP12
+
+#Redux (used for managing state i.e state management)(2:21)
+    1) Where data is heavenly used, data transfer, read/write
+
+    2) Redux is seperate lib not a part of React
+
+# we will we using #Redux-Toolkit instead of vanilla #Redux
+
+    The Redux Toolkit package is intended to be the standard way to write Redux logic. It was originally created to help address three common concerns about Redux:
+
+    "Configuring a Redux store is too complicated"
+    "I have to add a lot of packages to get Redux to do anything useful"
+    "Redux requires too much boilerplate code"

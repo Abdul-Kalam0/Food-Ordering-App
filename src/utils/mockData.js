@@ -1,277 +1,5 @@
-import React from "react";     
-import ReactDOM from "react-dom/client"; 
-import logo from './logo.webp';  
-        
-        // Q1 To add the attribute to the div using react
-        
-        // const heading = React.createElement("h1", {}, "Hello World from React");
-        // const root = ReactDOM.createRoot(document.getElementById("root"));
-        // root.render(heading);
+// Swiggy Live Restaurant Data
 
-        // const heading = React.createElement('h1', 
-        // {id: 'heading'}, 
-        // "Hello World Abdul Kalam");
-
-        // console.log(heading);// return object
-
-        // const root = ReactDOM.createRoot(document.getElementById('root'));
-
-        // root.render(heading); // convert object into h1 and out in the div
-
-//////////////////////////////////////////////
-
-        // Q2 add multiple attributes to the existing div
-        // nested HTML structure using react how to create above structure
-
-        // <div id = "parent">
-        //         <div id="chiled">
-        //                 <h1> I am h1 tag</h1>
-        //         </div>
-        // </div>
-        // ReactElement(object) => is the object => while rendering to DOM it will become into HTML which browser understand.
-       
-
-        // const parent = React.createElement("div", 
-        //         {id: 'parent'}, 
-        //         React.createElement("div", 
-        //         {id: 'child'}, 
-        //         React.createElement("h1", {}, 'I am h1 tag')
-        //         )
-        // );
-
-        // console.log(parent);
-        // const root = ReactDOM.createRoot(document.getElementById('root'));
-
-        // root.render(parent);
-
-////////////////////////////////////////////////////
-
-        // Q3 How to add another sibling to the existing sibling then we have to use array,
-
-        // <div id = "parent">
-        //         <div id="chiled">
-        //                 <h1> I am h1 tag</h1>
-        //                 <h2>I am sibling of h1</h2>
-        //         </div>
-        // </div>
-
-        // How to draw the above structure
-         
- 
-
-        // const parent = React.createElement("div", 
-        //         {id: 'parent'}, 
-        //         React.createElement("div", 
-        //         {id: 'child'}, [
-        //         React.createElement("h1", {}, 'I am h1 tag'), 
-        //         React.createElement("h1", {}, 'I am sibling of h1 tag'),
-        //         ])
-        // );
-
-        // console.log(parent);
-        // const root = ReactDOM.createRoot(document.getElementById('root'));
-
-        // root.render(parent);
-
-////////////////////////////////////////////////////////////////////
-
-
-        // Q4 draw the given below structure 
-
-        // <div id = "parent">
-        //         <div id="chiled">
-        //                 <h1> I am h1 tag</h1>
-        //                 <h2>I am sibling of h1</h2>
-        //         </div>
-        //         <div id="chiled">
-        //                 <h1> I am h1 tag</h1>
-        //                 <h2>I am sibling of h1</h2>
-        //         </div>      
-        // </div>
-///////////////////////////////////////////////////////////////////////
-
-        // Q4 We will use Array i.e array of child
-
-        // const parent = React.createElement("div", 
-        //         {id: 'parent'}, 
-        //         [React.createElement("div", 
-        //                 {id: 'child'}, [
-        //                 React.createElement("h1", {}, 'I am h1 tag'), 
-        //                 React.createElement("h1", {}, 'I am sibling of h1 tag'),
-        //                 ]),
-        //         React.createElement("div", 
-        //                 {id: 'child'}, [
-        //                 React.createElement("h1", {}, 'I am h1 tag'), 
-        //                 React.createElement("h1", {}, 'I am sibling of h1 tag'),
-        //                 ])]
-        // );
-
-        // console.log(parent);
-        // const root = ReactDOM.createRoot(document.getElementById('root'));
-
-        // root.render(parent);
-
-
-        // const parent = React.createElement('div', {id: 'hello'}, [
-        //         React.createElement('div', {id: 'c1'}, [
-        //                 React.createElement('h1', {id: 'h1'}, "hii i am h1"),
-        //                 React.createElement('h2', {id: 'h2'}, 'hlo i am h2'),
-        //         ]),
-        //         React.createElement('div', {id: 'c2'}, [
-        //                 React.createElement('h1', {id: 'h1'}, "bye i am h1"),
-        //                 React.createElement('h2', {id: 'h2'}, 'blo i am h2'),
-        //         ])
-
-        // ]);
-
-        // const root = ReactDOM.createRoot(document.getElementById('root'));
-        // root.render(parent);
-
-// EP3 ///////////////////////////////////////////////////////////////////////////////////////////////
-        // reactElement is object
-        // JSX is not HTML inside JS
-        // JSX is diffrent from JS
-        // JSX is HTML-like syntax or XML-like
-        // JSX before going to jsEngine this code is Transpiled(converted to code jsEngine can understand)      Transpiled is done by Parcel i.e (it is resposibility of Babel job in the node_modules, Babel is JS Compiler) 
-
-        // How this line is working?
-        // JSX = Babel => Transpiled to React.createElement =>ReactElement-> JS Object => HTMLElement(render)
-
-        // if JSX is of single line no problem but if in multiple line then write in brackets()
-
-
-// React Element
-        // const Heading = (<h1 className="rt" >
-        //         This is using JSX
-        //         </h1>
-        //         );
-
-        // const root = ReactDOM.createRoot(document.getElementById('rt'));
-
-        // root.render(Heading);
-        
-        
-
-
-
-// Two ways of creating React Component => 1) Class Based Component (Old, not in Practice)  &  
-// 2) Functional Component (Currently Used practice)
-// Functional Component => is a  JS function which return some JSX (Elements)code and name start with Capital letter.
-
-//        const HeadingComponet = () =>{
-//         return <h1 className="h1">This is Function component</h1>;
-//        };
-
-// React Element
-/*
-        const title = (
-                <h1 className="head" tabIndex="5">
-                this is title element</h1>
-        );
-
-        
-        const Title = () => (
-                <h1 className="head" tabIndex="5">
-                this is title component</h1>
-        );
-
-        const number = 10000;
-*/
-
-        //component inside component or Component composition(composing two component in a  //single component)  <Title /> === <Title></Title> === {Title()} bcoz JSX is JS function so i can call like this. 
-
-        // this is how we put react element in component or we can perform any js code.
-        //{title} 
-               
-/*     
-        const HeadingComponet = () => (
-        <div id="container">
-                <Title />
-                <Title></Title>
-                {Title()}
-                // {title} 
-                // {number}  
-                <h1 className="h1">This is Function component</h1>
-        </div>
-        
-       );
-*/
-/*
-const root = ReactDOM.createRoot(document.getElementById('rt'));
-
-// this is how we render Function Component <HeadingComponent/>
-        root.render(<HeadingComponet />);
-*/
-//////////////////////////////////////////////// EP4 ///////////////////////////////////////////////////////////
-
-// 1) Planning
-       // what you r going the build i.e (layout of App)
-/**
- * - Header
- *      - Logo
- *      - Nav Items
- * - Body
- *      - Search
- *      - RestaurantContainer
- *      - RestaurantCard
- *              - img
- *              - name of res, rating, cuisine, delivery time 
- * -Footer
- *      - Copyright
- *      - Links
- *      - Address
- *      - Contact
- * 
- *  */      
-        
-const Header = () => {
-        return (
-                <div className="header">
-                        <div className="logo-container">
-                            <img className="logo" src={logo} />    
-                        </div>
-                        <div className="nav-items">
-                                <ul>
-                                        <li>Home</li>
-                                        <li>Cart</li>
-                                        <li>About Us</li>
-                                        <li>Contact Us</li>
-                                </ul>
-                        </div>
-                </div>
-        );
-};
-
-
-const RestaurantCard = (props) => {
-        const {resData} = props;
-        const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, deliveryTime} = resData?.data;
-        return (
-                <div className="res-card">
-                        <img className="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}></img>
-
-                        <h3>{name}</h3>
-                        <h4>{cuisines.join(", ")}</h4>
-                        <h5>{avgRating} star</h5>
-                        <h6>₹{costForTwo / 100} For Two</h6>
-                        <h7>{deliveryTime} minutes</h7>
-                </div>
-        );
-};
-
-/*
-props is used for dynamically purpose
-props are just arguments to the function
-passing props to a function same as passing arguments to the function
-
-
-<RestaurantCard 
-        resName="Megnna Foods"
-        cuisine="Muradabadi Biryani, North Indian, Asia"
-/> 
-*/
-
-// Restaurant
 const resList =  [
         {
           type: "restaurant",
@@ -2088,31 +1816,857 @@ const resList =  [
           },
           subtype: "basic",
         },
-      ];
-
-// never use index as a key recommended by react itself. (restaurant, index), key = {index}
-
-const Body = () => {
-        return (
-                <div className="body">
-                        <div className="search">Search</div>
-                                <div className="res-container">
-                                        {resList.map((restaurant) => (
-                                        <RestaurantCard key = {restaurant.data.id} resData={restaurant}/>
-                                        ))};
-                                </div>       
-                </div>
-        );
-};
+];
 
 
-const AppComponent = () => {
-        return (<div className="app">
-                <Header/>
-                <Body/>
-        </div>);
-};
-
-const root = ReactDOM.createRoot(document.getElementById('rt'));
-
-root.render(<AppComponent/>)
+// const resList = "restaurants" [
+//   {
+//     "info": {
+//       "id": "393840",
+//       "name": "Chinese Wok",
+//       "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+//       "locality": "Chikka Lakshmaiah Layout",
+//       "areaName": "Adugodi",
+//       "costForTwo": "₹250 for two",
+//       "cuisines": [
+//         "Chinese",
+//         "Asian",
+//         "Tibetan",
+//         "Desserts"
+//       ],
+//       "avgRating": 4.2,
+//       "parentId": "61955",
+//       "avgRatingString": "4.2",
+//       "totalRatingsString": "1K+",
+//       "sla": {
+//         "deliveryTime": 31,
+//         "lastMileTravel": 2.5,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "30-35 mins",
+//         "lastMileTravelString": "2.5 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-20 02:00:00",
+//         "opened": true
+//       },
+//       "badges": {
+        
+//       },
+//       "isOpen": true,
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "aggregatedDiscountInfoV3": {
+//         "header": "ITEMS",
+//         "subHeader": "AT ₹179"
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "--"
+//         }
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/chinese-wok-chikka-lakshmaiah-layout-adugodi-bangalore-393840",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "59627",
+//       "name": "La Pino'z Pizza",
+//       "cloudinaryImageId": "ntjshqsv2k7vxtv7vmib",
+//       "locality": "Koramangala",
+//       "areaName": "Koramangala",
+//       "costForTwo": "₹251 for two",
+//       "cuisines": [
+//         "Pizzas",
+//         "Pastas",
+//         "Italian",
+//         "Desserts",
+//         "Beverages"
+//       ],
+//       "avgRating": 4.3,
+//       "parentId": "4961",
+//       "avgRatingString": "4.3",
+//       "totalRatingsString": "10K+",
+//       "sla": {
+//         "deliveryTime": 29,
+//         "lastMileTravel": 1.5,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "25-30 mins",
+//         "lastMileTravelString": "1.5 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-20 03:00:00",
+//         "opened": true
+//       },
+//       "badges": {
+        
+//       },
+//       "isOpen": true,
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "aggregatedDiscountInfoV3": {
+//         "header": "50% OFF",
+//         "subHeader": "UPTO ₹100"
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "4.3",
+//           "ratingCount": "1K+"
+//         },
+//         "source": "GOOGLE",
+//         "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/la-pinoz-pizza-koramangala-bangalore-59627",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "895151",
+//       "name": "The Belgian Waffle Co.",
+//       "locality": "1ST BLOCK KORAMANGALA",
+//       "areaName": "NEAR WIPRO PARK SIGNAL",
+//       "costForTwo": "₹200 for two",
+//       "cuisines": [
+//         "Waffle",
+//         "Desserts",
+//         "Ice Cream",
+//         "Beverages"
+//       ],
+//       "avgRating": 4.6,
+//       "veg": true,
+//       "parentId": "2233",
+//       "avgRatingString": "4.6",
+//       "totalRatingsString": "50+",
+//       "sla": {
+//         "deliveryTime": 25,
+//         "lastMileTravel": 1.4,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "25-30 mins",
+//         "lastMileTravelString": "1.4 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-19 23:00:00",
+//         "opened": true
+//       },
+//       "badges": {
+        
+//       },
+//       "isOpen": true,
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "aggregatedDiscountInfoV3": {
+//         "header": "20% OFF",
+//         "subHeader": "UPTO ₹50"
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "isNewlyOnboarded": true,
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "--"
+//         }
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/the-belgian-waffle-co-1st-block-koramangala-near-wipro-park-signal-bangalore-895151",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "581809",
+//       "name": "UBQ by Barbeque Nation",
+//       "cloudinaryImageId": "muaktnk5xb3zop4bvj6l",
+//       "locality": "7th Block",
+//       "areaName": "Koramangala",
+//       "costForTwo": "₹300 for two",
+//       "cuisines": [
+//         "North Indian",
+//         "Barbecue",
+//         "Biryani",
+//         "Kebabs",
+//         "Mughlai",
+//         "Desserts"
+//       ],
+//       "avgRating": 3.9,
+//       "parentId": "10804",
+//       "avgRatingString": "3.9",
+//       "totalRatingsString": "100+",
+//       "sla": {
+//         "deliveryTime": 34,
+//         "lastMileTravel": 1.4,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "30-35 mins",
+//         "lastMileTravelString": "1.4 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-20 01:00:00",
+//         "opened": true
+//       },
+//       "badges": {
+        
+//       },
+//       "isOpen": true,
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "aggregatedDiscountInfoV3": {
+//         "header": "50% OFF",
+//         "subHeader": "UPTO ₹100"
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "--"
+//         }
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/ubq-by-barbeque-nation-7th-block-koramangala-bangalore-581809",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "375041",
+//       "name": "Andhra Gunpowder",
+//       "cloudinaryImageId": "byilgyrcfz690ryoasww",
+//       "locality": "6th Block",
+//       "areaName": "Koramangala",
+//       "costForTwo": "₹350 for two",
+//       "cuisines": [
+//         "Andhra",
+//         "Biryani",
+//         "South Indian"
+//       ],
+//       "avgRating": 4.5,
+//       "parentId": "10496",
+//       "avgRatingString": "4.5",
+//       "totalRatingsString": "1K+",
+//       "sla": {
+//         "deliveryTime": 23,
+//         "lastMileTravel": 0.1,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "20-25 mins",
+//         "lastMileTravelString": "0.1 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-20 01:00:00",
+//         "opened": true
+//       },
+//       "badges": {
+//         "imageBadges": [
+//           {
+//             "imageId": "Rxawards/_CATEGORY-Andhra.png",
+//             "description": "Delivery!"
+//           }
+//         ]
+//       },
+//       "isOpen": true,
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+//             "badgeObject": [
+//               {
+//                 "attributes": {
+//                   "description": "Delivery!",
+//                   "imageId": "Rxawards/_CATEGORY-Andhra.png"
+//                 }
+//               }
+//             ]
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "aggregatedDiscountInfoV3": {
+//         "header": "₹100 OFF",
+//         "subHeader": "ABOVE ₹399",
+//         "discountTag": "FLAT DEAL"
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "--"
+//         }
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/andhra-gunpowder-6th-block-koramangala-bangalore-375041",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "918822",
+//       "name": "A2B - Adyar Ananda Bhavan",
+//       "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/2/75e5dede-e856-4778-a4b5-02963a3491e3_918822.jpg",
+//       "locality": "INDUSTRIAL LAYOUT",
+//       "areaName": "Koramangala",
+//       "costForTwo": "₹250 for two",
+//       "cuisines": [
+//         "South Indian"
+//       ],
+//       "avgRating": 4.4,
+//       "veg": true,
+//       "parentId": "22",
+//       "avgRatingString": "4.4",
+//       "totalRatingsString": "50+",
+//       "sla": {
+//         "deliveryTime": 28,
+//         "lastMileTravel": 1.4,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "25-30 mins",
+//         "lastMileTravelString": "1.4 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-19 22:30:00",
+//         "opened": true
+//       },
+//       "badges": {
+        
+//       },
+//       "isOpen": true,
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "aggregatedDiscountInfoV3": {
+//         "header": "₹75 OFF",
+//         "subHeader": "ABOVE ₹199",
+//         "discountTag": "FLAT DEAL"
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "isNewlyOnboarded": true,
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "--"
+//         }
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/a2b-adyar-ananda-bhavan-industrial-layout-koramangala-bangalore-918822",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "671928",
+//       "name": "KFC",
+//       "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/510f05e2-a9e7-49fe-8ab3-ea8c2eb8a5ae_671928.JPG",
+//       "locality": "7th Block",
+//       "areaName": "Koramangla",
+//       "costForTwo": "₹400 for two",
+//       "cuisines": [
+//         "Burgers",
+//         "Fast Food",
+//         "Rolls & Wraps"
+//       ],
+//       "avgRating": 4.3,
+//       "parentId": "547",
+//       "avgRatingString": "4.3",
+//       "totalRatingsString": "1K+",
+//       "sla": {
+//         "deliveryTime": 21,
+//         "lastMileTravel": 1.2,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "20-25 mins",
+//         "lastMileTravelString": "1.2 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-20 02:00:00",
+//         "opened": true
+//       },
+//       "badges": {
+        
+//       },
+//       "isOpen": true,
+//       "aggregatedDiscountInfoV2": {
+        
+//       },
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+            
+//           }
+//         }
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "--"
+//         }
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/kfc-7th-block-koramangla-bangalore-671928",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   },
+//   {
+//     "info": {
+//       "id": "275",
+//       "name": "Mani's Dum Biryani",
+//       "cloudinaryImageId": "xlr4ngepa5gxkugrsdbs",
+//       "locality": "Koramangala",
+//       "areaName": "Koramangala",
+//       "costForTwo": "₹400 for two",
+//       "cuisines": [
+//         "Andhra",
+//         "Biryani"
+//       ],
+//       "avgRating": 4.6,
+//       "parentId": "623",
+//       "avgRatingString": "4.6",
+//       "totalRatingsString": "10K+",
+//       "sla": {
+//         "deliveryTime": 26,
+//         "lastMileTravel": 2.3,
+//         "serviceability": "SERVICEABLE",
+//         "slaString": "25-30 mins",
+//         "lastMileTravelString": "2.3 km",
+//         "iconType": "ICON_TYPE_EMPTY"
+//       },
+//       "availability": {
+//         "nextCloseTime": "2024-07-20 00:45:00",
+//         "opened": true
+//       },
+//       "badges": {
+//         "textExtendedBadges": [
+//           {
+//             "iconId": "guiltfree/GF_Logo_android_3x",
+//             "shortDescription": "options available",
+//             "fontColor": "#7E808C"
+//           }
+//         ]
+//       },
+//       "isOpen": true,
+//       "aggregatedDiscountInfoV2": {
+        
+//       },
+//       "type": "F",
+//       "badgesV2": {
+//         "entityBadges": {
+//           "imageBased": {
+            
+//           },
+//           "textBased": {
+            
+//           },
+//           "textExtendedBadges": {
+//             "badgeObject": [
+//               {
+//                 "attributes": {
+//                   "description": "",
+//                   "fontColor": "#7E808C",
+//                   "iconId": "guiltfree/GF_Logo_android_3x",
+//                   "shortDescription": "options available"
+//                 }
+//               }
+//             ]
+//           }
+//         }
+//       },
+//       "orderabilityCommunication": {
+//         "title": {
+          
+//         },
+//         "subTitle": {
+          
+//         },
+//         "message": {
+          
+//         },
+//         "customIcon": {
+          
+//         }
+//       },
+//       "differentiatedUi": {
+//         "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+//         "differentiatedUiMediaDetails": {
+//           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+//           "lottie": {
+            
+//           },
+//           "video": {
+            
+//           }
+//         }
+//       },
+//       "reviewsSummary": {
+        
+//       },
+//       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+//       "restaurantOfferPresentationInfo": {
+        
+//       },
+//       "externalRatings": {
+//         "aggregatedRating": {
+//           "rating": "4.2",
+//           "ratingCount": "1K+"
+//         },
+//         "source": "GOOGLE",
+//         "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+//       },
+//       "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+//     },
+//     "analytics": {
+//       "context": "seo-data-c839e3f8-1676-4746-9dd8-93a70cd5ecc2"
+//     },
+//     "cta": {
+//       "link": "https://www.swiggy.com/restaurants/manis-dum-biryani-koramangala-bangalore-275",
+//       "text": "RESTAURANT_MENU",
+//       "type": "WEBLINK"
+//     },
+//     "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+//   }
+// ]
+export default resList;
