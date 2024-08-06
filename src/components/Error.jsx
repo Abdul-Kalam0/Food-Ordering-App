@@ -1,4 +1,4 @@
-//rafce => snippet to write the code
+//rafce => snippet to write the code 
 import { useRouteError } from "react-router-dom";
 // this state variable give more info for the error
 

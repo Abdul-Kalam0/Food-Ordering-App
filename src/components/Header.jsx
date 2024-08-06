@@ -39,7 +39,7 @@ const Header = () => {
                                             BtnNameReact === 'Login' ? setBtnNameReact("Logout") : setBtnNameReact("Login");
                                         }}
                                         >
-                                            {BtnNameReact}</button>
+                                            {BtnNameReact}</button>  
 
                                     </div>
                                     <li className='px-4 font-bold'>{loggedInUser}</li>

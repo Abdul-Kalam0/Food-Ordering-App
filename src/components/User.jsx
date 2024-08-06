@@ -16,7 +16,7 @@ useEffect(()=>{
         <div className="user-card">
             <h2>Name : {name}</h2>
             <h3>Location : Bareilly</h3>
-            <h4>Contact : @abdulkalamiit</h4>
+            <h4>Contact : @abdulkalamiit</h4> 
         </div>
     );
 };

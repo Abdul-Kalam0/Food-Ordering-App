@@ -4,9 +4,9 @@ import UserClass from "./UserClass";
 import { Component } from "react";
 import React from "react";
 
-// this is class componen
+// this is class componen 1
 class About extends React.Component{
-    constructor(props){
+    constructor(props ){
         super(props);
 
 

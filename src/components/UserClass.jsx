@@ -13,7 +13,7 @@ HOW IT IS MOUNTED IN THE WEBPAGE
 
 class UserClass extends React.Component {
 
-    // CONSTRUCTOR
+    // CONSTRUCTOR 
     constructor(props){
         super(props);
         // this state is a big object it contain all the state variable

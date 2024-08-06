@@ -1,4 +1,4 @@
-//rafce => snippet to write the code
+//rafce => snippet to write the code 
 
 const Contact = () => {
     return (

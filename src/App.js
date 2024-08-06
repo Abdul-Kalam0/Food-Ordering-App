@@ -13,7 +13,7 @@ import UserContext from "./utils/UserContext";
 
 // RouterProvider provide the router
         
-        // Q1 To add the attribute to the div using react
+        // Q1 To add the attribute to the div using react 
         
         // const heading = React.createElement("h1", {}, "Hello World from React");
         // const root = ReactDOM.createRoot(document.getElementById("root"));
