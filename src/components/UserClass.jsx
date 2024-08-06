@@ -11,7 +11,7 @@ HOW IT IS MOUNTED IN THE WEBPAGE
     IF componentDidMount() is present is the component than first const is called than render() is called and after that componentDidMount is called
 */
 
-class UserClass extends React.Component {
+class UserClass extends React.Component { 
 
     // CONSTRUCTOR 
     constructor(props){

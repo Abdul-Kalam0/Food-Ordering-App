@@ -8,7 +8,7 @@ const resList =  [
             id: "74453",
             name: "Domino's Pizza",
             uuid: "87727dbd-7f2b-4857-9763-359624165845",
-            city: "21",
+            city: "21", 
             area: "Athwa", 
             totalRatingsString: "1000+ ratings",
             cloudinaryImageId: "bz9zkh2aqywjhpankb07",

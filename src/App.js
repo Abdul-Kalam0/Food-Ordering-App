@@ -23,7 +23,7 @@ import UserContext from "./utils/UserContext";
         // {id: 'heading'}, 
         // "Hello World Abdul Kalam");
 
-        // console.log(heading);// return object
+        // console.log(heading);// return object 
 
         // const root = ReactDOM.createRoot(document.getElementById('root'));
 

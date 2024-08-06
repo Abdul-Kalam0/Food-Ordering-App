@@ -27,5 +27,5 @@ const RestaurantCategory = ({data, showItems, setShowIndex}) => {
   )
 }
 
-export default RestaurantCategory;
+export default RestaurantCategory; 
  

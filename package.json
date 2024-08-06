@@ -12,7 +12,7 @@
     "React",
     "ReactJS"
   ],
-  "author": "Abdul Kalam",
+  "author": "Abdul Kalam", 
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.12.0",

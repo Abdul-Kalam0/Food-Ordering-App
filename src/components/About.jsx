@@ -7,7 +7,7 @@ import React from "react";
 // this is class componen 1
 class About extends React.Component{
     constructor(props ){
-        super(props);
+        super(props); 
 
 
 

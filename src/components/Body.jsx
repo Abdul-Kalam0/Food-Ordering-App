@@ -132,7 +132,7 @@ to show the LOading... until API gets the data
                                         setFilteredRest(filteredList);
                                     }}>
                                         Top Rated Restaurant
-                            </button>   
+                            </button>    
                         </div>
                         {/* <div >
                             <label>UseName: </label> 1

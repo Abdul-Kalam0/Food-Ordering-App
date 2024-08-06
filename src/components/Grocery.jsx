@@ -8,7 +8,7 @@ const Grocery = () => {
     );
 };
 
-export default Grocery;C
+export default Grocery; 
 
 // creating seperate bundle for grocery
 // import grocery using lazy loading or On demand loading
